@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage ('Run Tests') {
+        stage('Run Tests') {
             steps {
-                cmd 'mvn test'
+                bat 'mvn test'
             }
         }
     }
